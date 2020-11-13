@@ -14,6 +14,7 @@
 		4CF2013C255D27FB007A2438 /* newsTable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2013A255D27FB007A2438 /* newsTable.xcdatamodeld */; };
 		4CF2013E255D27FF007A2438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2013D255D27FF007A2438 /* Assets.xcassets */; };
 		4CF20141255D27FF007A2438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2013F255D27FF007A2438 /* LaunchScreen.storyboard */; };
+		4CF2015F255D3E77007A2438 /* Type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2015E255D3E77007A2438 /* Type1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4CF2013D255D27FF007A2438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF20140255D27FF007A2438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF20142255D27FF007A2438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF2015E255D3E77007A2438 /* Type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		4CF20130255D27FB007A2438 /* newsTable */ = {
 			isa = PBXGroup;
 			children = (
+				4CF2014E255D36BA007A2438 /* Models */,
+				4CF2014D255D36A8007A2438 /* Controllers */,
+				4CF2014C255D369C007A2438 /* Views */,
 				4CF20131255D27FB007A2438 /* AppDelegate.swift */,
 				4CF20133255D27FB007A2438 /* SceneDelegate.swift */,
-				4CF20135255D27FB007A2438 /* ViewController.swift */,
-				4CF20137255D27FB007A2438 /* Main.storyboard */,
 				4CF2013D255D27FF007A2438 /* Assets.xcassets */,
 				4CF2013F255D27FF007A2438 /* LaunchScreen.storyboard */,
 				4CF20142255D27FF007A2438 /* Info.plist */,
 				4CF2013A255D27FB007A2438 /* newsTable.xcdatamodeld */,
+				4CF2015E255D3E77007A2438 /* Type1.swift */,
 			);
 			path = newsTable;
+			sourceTree = "<group>";
+		};
+		4CF2014C255D369C007A2438 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CF20137255D27FB007A2438 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4CF2014D255D36A8007A2438 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CF20135255D27FB007A2438 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4CF2014E255D36BA007A2438 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +171,7 @@
 				4CF20132255D27FB007A2438 /* AppDelegate.swift in Sources */,
 				4CF20134255D27FB007A2438 /* SceneDelegate.swift in Sources */,
 				4CF2013C255D27FB007A2438 /* newsTable.xcdatamodeld in Sources */,
+				4CF2015F255D3E77007A2438 /* Type1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
