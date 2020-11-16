@@ -15,6 +15,7 @@
 		4CF2013E255D27FF007A2438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2013D255D27FF007A2438 /* Assets.xcassets */; };
 		4CF20141255D27FF007A2438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF2013F255D27FF007A2438 /* LaunchScreen.storyboard */; };
 		4CF2015F255D3E77007A2438 /* Type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2015E255D3E77007A2438 /* Type1.swift */; };
+		4CF2016225625D76007A2438 /* NewsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2016125625D76007A2438 /* NewsDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4CF20140255D27FF007A2438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF20142255D27FF007A2438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CF2015E255D3E77007A2438 /* Type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1.swift; sourceTree = "<group>"; };
+		4CF2016125625D76007A2438 /* NewsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsDetailController.swift; path = newsTable/NewsDetailController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		4CF2014D255D36A8007A2438 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4CF2016125625D76007A2438 /* NewsDetailController.swift */,
 				4CF20135255D27FB007A2438 /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -170,6 +173,7 @@
 				4CF20136255D27FB007A2438 /* ViewController.swift in Sources */,
 				4CF20132255D27FB007A2438 /* AppDelegate.swift in Sources */,
 				4CF20134255D27FB007A2438 /* SceneDelegate.swift in Sources */,
+				4CF2016225625D76007A2438 /* NewsDetailController.swift in Sources */,
 				4CF2013C255D27FB007A2438 /* newsTable.xcdatamodeld in Sources */,
 				4CF2015F255D3E77007A2438 /* Type1.swift in Sources */,
 			);

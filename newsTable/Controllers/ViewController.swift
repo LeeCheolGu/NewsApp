@@ -25,12 +25,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     DispatchQueue.main.async {
                         self.tableViewMain.reloadData()
                     }
-//                    for (idx, value) in articles.enumerated() {
-//                        if let v = value as? Dictionary<String, Any> {
-//
-//                        }
-//
-//                    }
                 } catch {
                     print("Error!! \(error)")
                 }
@@ -65,13 +59,48 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(identifier: "NewsDetailController") as! NewsDetailController
+        if let news = newsData {
+            let row = news[indexPath.row]
+            if let r = row as? Dictionary<String, Any> {
+                if let imageUrl = r["urlToImage"] as? String {
+                    controller.imageURL = imageUrl
+                }
+                if let desc = r["description"] as? String {
+                    controller.descipt = desc
+                }
+            }
+        }
+        //showDetailViewController(controller, sender: nil)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let id = segue.identifier, "NewsDetail" == id {
+            if let controller = segue.destination as? NewsDetailController {
+                if let news = newsData {
+                    if let indexPath = tableViewMain.indexPathForSelectedRow {
+                        let row = news[indexPath.row]
+                        if let r = row as? Dictionary<String, Any> {
+                            if let imageUrl = r["urlToImage"] as? String {
+                                controller.imageURL = imageUrl
+                            }
+                            if let desc = r["description"] as? String {
+                                controller.descipt = desc
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewMain.delegate = self
         tableViewMain.dataSource = self
+        navigationItem.title = "나만의 뉴스"
         getNews()
     }
  
